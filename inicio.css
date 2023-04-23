@@ -124,7 +124,7 @@ para los productos
   text-align: center;
 }
 .nproducto{
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 .producto{
   width: 180px;
@@ -133,8 +133,19 @@ para los productos
 /*
 para la mision y vison
 */
-
-
+#conocenos{
+  margin: 0 20px;
+}
+.titulos{
+  margin:10px 0 0 0;
+  font-size: 20px;
+  font-family: 'Arial Narrow Bold', sans-serif;
+}
+.contenido{
+  margin: 10px;
+  margin-left: 0;
+  font-size: 15px;
+}
 /*
 arriba el contenido
 */
