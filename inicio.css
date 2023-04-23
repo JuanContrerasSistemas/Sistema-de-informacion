@@ -1,15 +1,29 @@
-header {
+body, main{
+
   margin: 0;
   border: 0;
+  padding: 0;
+}
+/*
+para el encabezado
+*/
+header {
+
+  margin: 0;
+  border: 0;
+  padding: 0;
   background-color: yellow;
   display: flex;
   flex-wrap: wrap;
 }
-
-.left, .right {
-  flex-basis: 50%;
+.right{
+  flex-basis: 45%;
   display: flex;
   margin-bottom: 10px;
+}
+.left{
+  flex-basis: 50%;
+  display: flex;
 }
 
 @media (max-width: 767px) {
@@ -20,7 +34,7 @@ header {
 
 .logo img {
   padding: 0px;
-  padding-left: 5px;
+  padding-left: 10px;
   height: 60px;
   width: 70px;
   border-radius: 30%;
@@ -30,6 +44,8 @@ header {
   display: flex;
   width: 400px;
   margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 .right{
   justify-content: right;
@@ -82,7 +98,7 @@ nav a:hover {
 }
 
 .logo {
-  margin-right: 20px;
+  margin:0 0 0 20px;
 }
 
 .align-right {
@@ -91,6 +107,33 @@ nav a:hover {
 /*
 abajo el contenido
 */
+/*
+para los productos
+*/
+.container {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 185px;
+  height: 200px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.nproducto{
+  margin-bottom: 10px;
+}
+.producto{
+  width: 180px;
+  height: 150px;
+}
+/*
+para la mision y vison
+*/
+
 
 /*
 arriba el contenido
