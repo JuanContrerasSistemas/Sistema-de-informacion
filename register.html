@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Monipan</title>
+    <link href="register.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div>
+            <!-- Insertar encabezado-->
+        </div>
+        <div>
+            <form method="post" action='https://register-demo.freecodecamp.org'>
+                <section id="form" name="form">
+                    <label for="nombres">Nombres:</label><input class="control" type="text" id="nombres" name="nombres"
+                        placeholder="Ingrese sus nombres" required>
+                    <label for="apellidos">Apellidos:</label><input class="control" type="text" id="apellidos"
+                        name="apellidos" placeholder="Ingrese sus apellidos" required>
+                    <label for="correo">Correo:</label><input class="control" type="email" id="correo" name="correo"
+                        placeholder="Ingrese su correo" required>
+                    <label for="direccion">Direccion:</label><input class="control" type="text" id="direccion"
+                        name="direccion" placeholder="Ingrese su direccion" required>
+                    <label for="password">Contraseña:</label><input class="control" type="password" id="password"
+                        name="password" placeholder="Cree su contraseña" pattern="[a-z0-5]{8}" required>
+                    <p>Al dar click en registrar usted acepta estar de acuerdo con los <a href="#"> Terminos y
+                            condiciones</a>
+                    </p>
+                    <input type="submit" value="registrar">
+                    <p><a href="#">¿Ya tengo cuenta?</a></p>
+                </section>
+            </form>
+        </div>
+        <div class="informacion">
+            <p class="cwhite" id="direction">Direccion: <a class="cwhite" href="https://goo.gl/maps/8o3qYi9WKpMCdZiw7">avenida 12 # 17-31 Barrio La
+                    Libertad</a></p>
+                <div class="contactanos"> 
+            <img class="logo" src="imagenes/facebook.png"><img class="logo" id="instagram"
+                    src="imagenes/instagram.png"></div>
+        </div>
+    </main>
+</body>
+
+</html>
