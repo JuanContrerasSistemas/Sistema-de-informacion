@@ -10,11 +10,21 @@
 
 <body>
     <main>
-        <div class="head">
-            <!-- Insertar encabezado-->
-            <img class="logo" id="monipan" src="imagenes/logo.jpeg">
-            <p class="texto">Iniciar sesion</p><p id="registrar"><a class="cwhite" href="#">Registrarse</a></p>
-        </div>
+        <header>
+            <div class="left">
+                <div class="logoe">
+                    <a href="inicio.html">
+                        <img src="imagenes/logo.jpeg" alt="Panaderia Monipan">
+                    </a>
+                </div>
+                <p class="textoe">Iniciar sesion</p>
+            </div>
+            <div class="right">
+                <div class="registrar">
+                    <a href="register.html">Registrarse</a>
+                </div>
+            </div>
+        </header>
         <div>
             <form method="post" action='#'>
                 <section id="form" name="form">
@@ -22,19 +32,21 @@
                         placeholder="Ingrese su correo" required>
                     <label for="password">Contraseña:</label><input class="control" type="password" id="password"
                         name="password" placeholder="Cree su contraseña" pattern="[a-z0-5]{8}" required>
-                    <input type="submit" value="Iniciar sesion">
-                    <p class="texto"><a href="#">¿No tengo una cuenta?</a></p>
+                        <br>
+                    <input id="envio" type="submit" value="Iniciar sesion">
+                    <p class="texto"><a href="register.html">¿No tengo una cuenta?</a></p>
                 </section>
             </form>
         </div>
-        <div class="informacion">
-            <p class="cwhite" id="direction">Direccion: <a class="cwhite" href="https://goo.gl/maps/8o3qYi9WKpMCdZiw7">avenida 12 # 17-31 Barrio La
-                    Libertad</a></p>
-                <div class="contactanos"> <a href="https://m.facebook.com/libertad.monipan.7/">
-                <img class="logo" id="facebook" src="imagenes/facebook.png"></a><a href=""><img class="logo" id="whatsaap"
-                    src="imagenes/whatsaap.png" title="whatsapp iconos"></a></div>
-        </div>
+        
+    <div class="contacto">
+        <p>Dirección: <a href="https://goo.gl/maps/8o3qYi9WKpMCdZiw7">avenida 12 # 17-31 Barrio La
+                Libertad</a></p>
+        <p>Teléfono: (607)5845768 <a href="https://m.facebook.com/libertad.monipan.7/"><img src="imagenes/facebook.png"
+                    alt="Facebook" class="icono"></a>
+            <a href="#"><img src="imagenes/whatsaap.png" alt="Whatsapp" class="icono">
+        </p></a>
+    </div>
     </main>
 </body>
-
 </html>

@@ -10,11 +10,21 @@
 
 <body>
     <main>
-        <div class="head">
-            <!-- Insertar encabezado-->
-            <img class="logo" id="monipan" src="imagenes/logo.jpeg">
-            <p class="texto">Formulario de registro</p><p id="login"><a class="cwhite" href="#">Iniciar sesion</a></p>
-        </div>
+        <header>
+            <div class="left">
+                <div class="logoe">
+                    <a href="inicio.html">
+                        <img src="imagenes/logo.jpeg" alt="Panaderia Monipan">
+                    </a>
+                </div>
+                <p class="textoe">Registrarse</p>
+            </div>
+            <div class="right">
+                <div class="login">
+                    <a href="login.html">Iniciar sesion</a>
+                </div>
+            </div>
+        </header>
         <div>
             <form method="post" action='#'>
                 <section id="form" name="form">
@@ -28,20 +38,24 @@
                         name="direccion" placeholder="Ingrese su direccion" required>
                     <label for="password">Contraseña:</label><input class="control" type="password" id="password"
                         name="password" placeholder="Cree su contraseña" pattern="[a-z0-5]{8}" required>
-                    <p class="texto">Al dar click en registrar usted acepta estar de acuerdo con los <a href="#"> Terminos y
-                            condiciones</a>
+                    <div class="anidador">
+                        <p class="texto">Al dar click en registrar usted acepta estar de acuerdo con los <a
+                                href="#">Terminos y condiciones</a>
+                    </div>
                     </p>
                     <input type="submit" value="registrar">
-                    <p class="texto"><a href="#">¿Ya tengo cuenta?</a></p>
+
+                    <p class="texto"><a href="login.html">¿Ya tengo cuenta?</a></p>
                 </section>
             </form>
         </div>
-        <div class="informacion">
-            <p class="cwhite" id="direction">Direccion: <a class="cwhite" href="https://goo.gl/maps/8o3qYi9WKpMCdZiw7">avenida 12 # 17-31 Barrio La
+        <div class="contacto">
+            <p>Dirección: <a href="https://goo.gl/maps/8o3qYi9WKpMCdZiw7">avenida 12 # 17-31 Barrio La
                     Libertad</a></p>
-                <div class="contactanos"> <a href="https://m.facebook.com/libertad.monipan.7/">
-                <img class="logo" id="facebook" src="imagenes/facebook.png"></a><a href=""><img class="logo" id="whatsaap"
-                    src="imagenes/whatsaap.png" title="whatsapp iconos"></a></div>
+            <p>Teléfono: (607)5845768 <a href="https://m.facebook.com/libertad.monipan.7/"><img
+                        src="imagenes/facebook.png" alt="Facebook" class="icono"></a>
+                <a href="#"><img src="imagenes/whatsaap.png" alt="Whatsapp" class="icono">
+            </p></a>
         </div>
     </main>
 </body>

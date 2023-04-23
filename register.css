@@ -1,70 +1,130 @@
-body{
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-}
-.head{
-    background-color: #ffff00;
-    font-size: 12px;
-    color:white;
-    display:flex;
-    font-size: 30px;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
-.informacion{
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-    display: flex;
+header {
     background-color: yellow;
-    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
 }
-.contactanos{
-    padding-left: 30%;
-    margin-top: 10px;
+
+.left,
+.right {
+    flex-basis: 49%;
+    display: flex;
+    margin-bottom: 10px;
 }
-#monipan{
-    margin-top: 10px;
+
+@media (max-width: 767px) {
+
+    .left,
+    .right {
+        flex-basis: 100%;
+    }
+}
+
+.logoe img {
+    padding: 0px;
+    padding-left: 10px;
     height: 60px;
-    width: 60px;
+    width: 70px;
+    border-radius: 30%;
 }
-#login{
-    margin-left: 40%;
-    color:white;
-    text-align: right;
-    margin-right: 20px;
+
+.left {
+    justify-content: left;
+    display: flex;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
-.texto{
-    margin: 10px 0px;
-    text-align: left;
+
+.right {
+    justify-content: right;
+    display: flex;
+    width: 100px;
+    margin-top: 25px;
 }
-form{
-    margin:30px 20%;
+
+.textoe {
+    margin-left: 20px;
+    color: black;
+
 }
+
+.login a {
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.login a:hover {
+    background-color: #ffd700;
+    color: #333333;
+    border-color: #333333;
+}
+
+.align-right {
+    margin-left: auto;
+}
+
+/*
+abajo el contenido
+*/
+form {
+    margin: 30px 20%;
+}
+
 label {
     display: block;
     margin: 0.5rem 0;
-  }
-.cwhite{
-    color:white;
-    text-decoration:none;
 }
-#direction{
-    height: 50%;
-    padding-right: 30%;
-    margin-top: 10px;
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    max-width: 300px;
+    min-width: 200px;
+}
+
+.anidador {
+    max-width: 300px;
+
+}
+
+/*
+arriba el contenido
+*/
+
+.contacto {
+    background-color: yellow;
+    padding: 10px;
     text-align: left;
+
 }
-#facebook{
-    border-radius: 50%;
+
+.contacto p {
+    margin: 5px;
 }
-.logo{
-    width: 20px;
-    height: 20px;
-    text-align: right;
-    margin: 0px 5px;
+
+.contacto a {
+    color: black;
+    text-decoration: none;
+}
+
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+.contacto img.icono {
+    float: right;
+    margin-left: 10px;
+    width: 17px;
+    height: 17px;
+    border-radius: 30%;
 }
