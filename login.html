@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iniciar sesion Monipan</title>
+    <link href="login.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div class="head">
+            <!-- Insertar encabezado-->
+            <img class="logo" id="monipan" src="imagenes/logo.jpeg">
+            <p class="texto">Iniciar sesion</p><p id="registrar"><a class="cwhite" href="#">Registrarse</a></p>
+        </div>
+        <div>
+            <form method="post" action='https://register-demo.freecodecamp.org'>
+                <section id="form" name="form">
+                    <label for="correo">Correo:</label><input class="control" type="email" id="correo" name="correo"
+                        placeholder="Ingrese su correo" required>
+                    <label for="password">Contraseña:</label><input class="control" type="password" id="password"
+                        name="password" placeholder="Cree su contraseña" pattern="[a-z0-5]{8}" required>
+                    <input type="submit" value="Iniciar sesion">
+                    <p class="texto"><a href="#">¿No tengo una cuenta?</a></p>
+                </section>
+            </form>
+        </div>
+        <div class="informacion">
+            <p class="cwhite" id="direction">Direccion: <a class="cwhite" href="https://goo.gl/maps/8o3qYi9WKpMCdZiw7">avenida 12 # 17-31 Barrio La
+                    Libertad</a></p>
+                <div class="contactanos"> <a href="https://m.facebook.com/libertad.monipan.7/">
+                <img class="logo" id="facebook" src="imagenes/facebook.png"></a><a href=""><img class="logo" id="whatsaap"
+                    src="imagenes/whatsaap.png" title="whatsapp iconos"></a></div>
+        </div>
+    </main>
+</body>
+
+</html>
