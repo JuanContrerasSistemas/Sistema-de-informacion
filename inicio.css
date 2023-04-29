@@ -8,11 +8,13 @@ body, main{
 para el encabezado
 */
 header {
-
+  <!-- Encabezado -->
+  --color-encabezado : red;
   margin: 0;
   border: 0;
   padding: 0;
-  background-color: yellow;
+  background-color: red;
+  background-color: var(--color-encabezado, red);
   display: flex;
   flex-wrap: wrap;
 }
@@ -65,6 +67,7 @@ nav li {
   margin: 0;
 }
 
+<!-- Color por defecto del boton -->
 nav a {
   color: black;
   text-decoration: none;
@@ -75,6 +78,7 @@ nav a {
   border-radius: 4px;
 }
 
+<!-- Cambio color con mouse encima de boton -->
 nav a:hover {
   background-color: #ffd700;
   color: #333333;
