@@ -1,32 +1,46 @@
-body, main{
+body,
+main {
 
   margin: 0;
   border: 0;
   padding: 0;
 }
+
 /*
 para el encabezado
 */
 header {
+  --colorfondo: white;
+  --colorcambio: red;
+  --colorletra: black;
+  --colorletrac: white;
+  --colorborde: black;
+
   margin: 0;
   border: 0;
   padding: 0;
+
   background-color: red;
+
   display: flex;
   flex-wrap: wrap;
 }
-.right{
+
+.right {
   flex-basis: 45%;
   display: flex;
   margin-bottom: 10px;
 }
-.left{
+
+.left {
   flex-basis: 50%;
   display: flex;
 }
 
 @media (max-width: 767px) {
-  .left, .right {
+
+  .left,
+  .right {
     flex-basis: 100%;
   }
 }
@@ -38,7 +52,8 @@ header {
   width: 70px;
   border-radius: 30%;
 }
-.left{
+
+.left {
   justify-content: left;
   display: flex;
   width: 400px;
@@ -46,12 +61,14 @@ header {
   margin-left: 20px;
   margin-bottom: 10px;
 }
-.right{
+
+.right {
   justify-content: right;
   display: flex;
   width: 100px;
   margin-top: 25px;
 }
+
 nav ul {
   list-style: none;
   display: flex;
@@ -66,43 +83,67 @@ nav li {
 
 nav a {
   color: black;
+  color: var(--colorletra,black);
+
   text-decoration: none;
+
   font-size: 13px;
   font-weight: bold;
   padding: 10px;
-  border: 1px solid black;
+
+  border-color: black;
+  border-color: var(--colorborde,black);
+
+  border: 1px solid;
   border-radius: 4px;
+
+  background-color: white;
+  background-color: var(--colorfondo,white);
 }
 
 nav a:hover {
-  background-color: #ffd700;
-  color: #333333;
-  border-color: #333333;
+
+  background-color: red;
+  background-color: var(--colorcambio);
+
+  color: white;
+  color: var(--colorletrac,white);
 }
 
 .login a {
   color: black;
+  color: var(--colorletra,black);
+
   text-decoration: none;
   font-size: 13px;
   font-weight: bold;
   padding: 10px;
-  border: 1px solid black;
+
+  border-color: black;
+  border-color: var(--colorborde,black);
+
+  border: 1px solid;
+  
   border-radius: 4px;
+  background-color: var(--colorfondo);
 }
 
 .login a:hover {
-  background-color: #ffd700;
-  color: #333333;
-  border-color: #333333;
+  color:white;
+  color: var(--colorletrac,white);
+
+  background-color: red;
+  background-color: var(--colorcambio,red);
 }
 
 .logo {
-  margin:0 0 0 20px;
+  margin: 0 0 0 20px;
 }
 
 .align-right {
   margin-left: auto;
 }
+
 /*
 abajo el contenido
 */
@@ -122,35 +163,46 @@ para los productos
   margin-bottom: 20px;
   text-align: center;
 }
-.nproducto{
+
+.nproducto {
   margin-bottom: 0px;
 }
-.producto{
+
+.producto {
   width: 180px;
   height: 150px;
 }
+
 /*
 para la mision y vison
 */
-#conocenos{
+#conocenos {
   margin: 0 20px;
 }
-.titulos{
-  margin:10px 0 0 0;
+
+.titulos {
+  margin: 10px 0 0 0;
   font-size: 20px;
   font-family: 'Arial Narrow Bold', sans-serif;
 }
-.contenido{
+
+.contenido {
   margin: 10px;
   margin-left: 0;
   font-size: 15px;
 }
+
 /*
 arriba el contenido
 */
 
 .contacto {
-  background-color: yellow;
+  --colorfondo:red;
+  --colorletra:black;
+
+  background-color: red;
+  background-color: var(--colorfondo,red);
+
   padding: 10px;
   text-align: left;
 
@@ -162,6 +214,8 @@ arriba el contenido
 
 .contacto a {
   color: black;
+  color:var(--color,black);
+
   text-decoration: none;
 }
 

@@ -7,11 +7,22 @@ body, main{
   /*
   para el encabezado
   */
-header {
-    background-color: yellow;
+  header {
+    --colorfondo: white;
+    --colorcambio: red;
+    --colorletra: black;
+    --colorletrac: white;
+    --colorborde: black;
+  
+    margin: 0;
+    border: 0;
+    padding: 0;
+  
+    background-color: red;
+  
     display: flex;
     flex-wrap: wrap;
-}
+  }
 
 .left,
 .right {
@@ -54,24 +65,38 @@ header {
 
 .textoe {
     margin-left: 20px;
+    
     color: black;
-
+    color:var(--colorletra);
 }
 
 .login a {
+    background-color: white;
+    background-color: var(--colorfondo,white);
+
     color: black;
+    color:var(--colorletra,black);
+
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
     padding: 10px;
-    border: 1px solid black;
+    
+    border-color:  black;
+    border-color: var(--colorborde,black);
+
+    border: 1px solid;
+    
     border-radius: 4px;
+
 }
 
 .login a:hover {
-    background-color: #ffd700;
-    color: #333333;
-    border-color: #333333;
+    background-color: red;
+    background-color: var(--colorcambio,red);
+
+    color: white;
+    color:var(--colorletrac,white);
 }
 
 .align-right {
@@ -109,29 +134,36 @@ arriba el contenido
 */
 
 .contacto {
-    background-color: yellow;
+    --colorfondo:red;
+    --colorletra:black;
+  
+    background-color: red;
+    background-color: var(--colorfondo,red);
+  
     padding: 10px;
     text-align: left;
-
-}
-
-.contacto p {
+  
+  }
+  
+  .contacto p {
     margin: 5px;
-}
-
-.contacto a {
+  }
+  
+  .contacto a {
     color: black;
+    color:var(--color,black);
+  
     text-decoration: none;
-}
-
-.contacto a:hover {
+  }
+  
+  .contacto a:hover {
     text-decoration: underline;
-}
-
-.contacto img.icono {
+  }
+  
+  .contacto img.icono {
     float: right;
     margin-left: 10px;
     width: 17px;
     height: 17px;
     border-radius: 30%;
-}
+  }
