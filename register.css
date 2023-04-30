@@ -1,110 +1,104 @@
-body, main{
+body,
+main {
 
     margin: 0;
     border: 0;
     padding: 0;
-  }
-  /*
+}
+
+/*
   para el encabezado
   */
-  header {
+header {
     --colorfondo: white;
     --colorcambio: red;
     --colorletra: black;
     --colorletrac: white;
     --colorborde: black;
-  
+
     margin: 0;
     border: 0;
-    padding: 0;
-  
+    padding: 5px;
+
     background-color: red;
-  
+
+    place-items: center;
+
     display: flex;
     flex-wrap: wrap;
-  }
-
-.left,
-.right {
-    flex-basis: 49%;
-    display: flex;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 767px) {
-
-    .left,
-    .right {
-        flex-basis: 100%;
-    }
-}
-
-.logoe img {
-    padding: 0px;
-    padding-left: 10px;
-    height: 60px;
-    width: 70px;
-    border-radius: 30%;
+    justify-content: space-between;
 }
 
 .left {
-    justify-content: left;
+    margin: 2px;
+    border: 0;
+    padding: 0;
+
+    place-items: center;
     display: flex;
-    width: 400px;
-    margin-top: 10px;
-    margin-left: 10px;
+    flex-wrap: wrap;
 }
 
-.right {
-    justify-content: right;
-    display: flex;
-    width: 100px;
-    margin-top: 25px;
-    margin-bottom: 20px;
+.logo {
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    height: 60px;
+    width: 70px;
+
+    border-radius: 30%;
 }
 
 .textoe {
     margin-left: 20px;
-    
+
     color: black;
-    color:var(--colorletra);
+    color: var(--colorletra, black);
 }
 
-.login a {
-    background-color: white;
-    background-color: var(--colorfondo,white);
+.boton {
+    margin: 5px;
+    border: 0;
+    padding: 0;
 
-    color: black;
-    color:var(--colorletra,black);
+    height: 20px;
+    max-width: 100px;
+}
 
-    text-decoration: none;
+.boton a {
+    margin: 0;
+    border: 0;
+    padding: 10px;
+
     font-size: 13px;
     font-weight: bold;
-    padding: 10px;
-    
-    border-color:  black;
-    border-color: var(--colorborde,black);
+
+
+    text-decoration: none;
+
+    background-color: white;
+    background-color: var(--colorfondo, white);
+
+    color: black;
+    color: var(--colorletra, black);
+
+    border-color: black;
+    border-color: var(--colorborde, black);
 
     border: 1px solid;
-    
-    border-radius: 4px;
 
+    border-radius: 4px;
 }
 
-.login a:hover {
+.boton a:hover {
     background-color: red;
-    background-color: var(--colorcambio,red);
+    background-color: var(--colorcambio);
 
     color: white;
-    color:var(--colorletrac,white);
+    color: var(--colorletrac, white);
 }
 
-.align-right {
-    margin-left: auto;
-}
-.logo {
-    margin:0 0 0 20px;
-  }
 /*
 abajo el contenido
 */
@@ -134,36 +128,36 @@ arriba el contenido
 */
 
 .contacto {
-    --colorfondo:red;
-    --colorletra:black;
-  
+    --colorfondo: red;
+    --colorletra: black;
+
     background-color: red;
-    background-color: var(--colorfondo,red);
-  
+    background-color: var(--colorfondo, red);
+
     padding: 10px;
     text-align: left;
-  
-  }
-  
-  .contacto p {
+
+}
+
+.contacto p {
     margin: 5px;
-  }
-  
-  .contacto a {
+}
+
+.contacto a {
     color: black;
-    color:var(--color,black);
-  
+    color: var(--color, black);
+
     text-decoration: none;
-  }
-  
-  .contacto a:hover {
+}
+
+.contacto a:hover {
     text-decoration: underline;
-  }
-  
-  .contacto img.icono {
+}
+
+.contacto img.icono {
     float: right;
     margin-left: 10px;
     width: 17px;
     height: 17px;
     border-radius: 30%;
-  }
+}
