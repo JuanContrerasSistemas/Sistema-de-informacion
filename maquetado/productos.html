@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Monipan</title>
+    <link rel="stylesheet" href="./inicio.css">
+    
+</head>
+<body>
+    <header>
+      <div class="left">
+        <div class="logo">
+          <a href="inicio.html">
+            <img src="imagenes/logo.jpeg" alt="Panaderia Monipan">
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nuestraEmpresa.html">Nuestra Empresa</a></li>
+            <li><a href="contacto.html">Contáctanos</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right">
+        <div class="login">
+          <a href="login.html">Iniciar sesión</a>
+        </div>
+      </div>
+      <div class="header-section container">
+        <div>
+            <img onclick="showCart(this)" class="cart" src="./imagenes/carro.png" alt="Carrito">
+            <p class="count-product">0</p>
+        </div>
+        <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">X</p>
+            <h3>Mi pedido</h3>
+            <div class="card-items">
+                
+            </div>
+            <h2>Total: $<strong class="price-total">0</strong></h2>
+        </div>
+      </div>
+    </header>
+    
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div id="mantecada">
+                    <img src="./imagenes/productos/mantecada.png" alt="Mantecada">
+                    <p>$<span>2000</span></p>
+                </div>
+                <p class="title">Porción de mantecada</p>
+                <a href="" data-id="1" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div id="tortadepan">
+                    <img src="./imagenes/productos/tortadepan.jpg" alt="TortadePan">
+                    <p>$<span>500</span></p>
+                </div>
+                <p class="title">Torta de pan</p>
+                <a href="" class="btn-add-cart" data-id="2">Añadir</a>
+            </div>
+            <div class="carts">
+                <div id="roscones">
+                    <img src="./imagenes/productos/roscones.jpg" alt="RoscóndeBocadillo">
+                    <p>$<span>800</span></p>
+                </div>
+                <p class="title">Roscón de bocadillo</p>
+                <a href="" data-id="3" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div id="roscones">
+                    <img src="./imagenes/productos/panhawaiano.jpg" alt="PanHawaiano">
+                    <p>$<span>3000</span></p>
+                </div>
+                <p class="title">Pan hawaiano</p>
+                <a href="" data-id="4" class="btn-add-cart">Añadir</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/productos/panchoco.jpg" alt="PandeChocolate">
+                    <p>$<span>500</span></p>
+                </div>
+                <p class="title">Pan de chocolate</p>
+                <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/productos/roscones.jpg" alt="">
+                    <p><span>45</span>$</p>
+                </div>
+                <p class="title"> MSI Vigor GK30 Teclado Gaming RGB</p>
+                <a href="" data-id="6" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts" class="">
+                <div>
+                    <img src="./imagenes/products/roscones.jpg" alt="">
+                    <p><span>23.99</span>$</p>
+                </div>
+                <p class="title"> Genesis Thor 300 RGB Teclado Mecánico Gaming RGB Switch Rojo</p>
+                <a href="" data-id="7" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/products/roscones.jpg" alt="">
+                    <p><span>50</span>$</p>
+                </div>
+                <p class="title"> Mars Gaming MKXTKL Teclado Mecánico Gaming RGB</p>
+                <a href="" data-id="8" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/productos/roscones.jpg" alt="">
+                    <p><span>16</span>$</p>
+                </div>
+                <p class="title"> Trust GXT 881 Odyss Teclado Gaming Semi-Mecánico RGB</p>
+                <a href="" data-id="9" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./imagenes/productos/roscones.jpg" alt="">
+                    <p><span>17.50</span>$</p>
+                </div>
+                <p class="title"> Krom Krusher Teclado Gaming Híbrido RGB + Ratón</p>
+                <a href="" data-id="10" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/productos/roscones.jpg" alt="">
+                    <p><span>45</span>$</p>
+                </div>
+                <p class="title"> Corsair K55 RGB PRO XT Teclado Gaming Retroiluminado Negro</p>
+                <a href="" data-id="11" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+              <div>
+                  <img src="./images/productos/roscones.jpg" alt="">
+                  <p><span>45</span>$</p>
+              </div>
+              <p class="title"> Corsair K55 RGB PRO XT Teclado Gaming Retroiluminado Negro</p>
+              <a href="" data-id="11" class="btn-add-cart">add to cart</a>
+          </div>
+        </div>
+    </section>
+
+    <nav>
+      <ul>
+        <li><a href="#">Atrás</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="productos2.html">Siguiente</a></li> 
+      </ul>
+    </nav>
+    <footer>
+    <div id="contacto" class="contacto">
+      <p>Dirección: <a href="https://goo.gl/maps/8o3qYi9WKpMCdZiw7">Avenida 12 # 17-31 Barrio La
+          Libertad</a></p>
+      <p>Teléfono: (607)5845768 <a href="https://m.facebook.com/libertad.monipan.7/"><img src="imagenes/facebook.png"
+            alt="Facebook" class="icono"></a>
+        <a href="#"><img src="imagenes/whatsaap.png" alt="Whatsapp" class="icono">
+      </p></a>
+    </div>
+    </footer>
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./custom.js" ></script>
+</body>
+</html>
